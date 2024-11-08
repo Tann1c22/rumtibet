@@ -1,0 +1,50 @@
+@import "_variables.sass"
+@import "_media.sass"
+
+@mixin btn-reset
+  border: none
+  background-color: transparent
+  outline: none
+
+//buttons
+@mixin btn-primary
+  display: block
+  width: 100%
+  outline: none
+  border: none
+  border-radius: 15px
+  background-color: $font-color-orange
+  font-family: Inter, sans-serif
+  font-size: 15px
+  line-height: 1.2
+  font-weight: 500
+  letter-spacing: -0.15px
+  color: $font-color-white
+  text-align: center
+
+  @include for-size(md)
+    border-radius: 10px
+
+  @include for-size(xl)
+    border-radius: 15px
+    font-size: 20px
+    letter-spacing: -0.2px
+
+  @include for-size(xxl)
+    border-radius: 20px
+    letter-spacing: 0
+
+
+@mixin placeholder
+  &::placeholder
+    @content
+  &::-webkit-input-placeholder //Для WebKit-браузеров (Chrome, Safari)
+    @content
+  &:-moz-placeholder //Для Firefox 19+
+    @content
+  &::-moz-placeholder //Для Firefox 4-18
+    @content
+  &:-ms-input-placeholder //Для Internet Explorer 10-11
+    @content
+  &::-ms-input-placeholder //Для Microsoft Edge
+    @content
