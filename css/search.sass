@@ -1,3 +1,9 @@
+select
+    text-decoration: 0
+    -webkit-appearance: none
+
+
+
 .search
     border-radius: 10px
     padding: 40px 42px
@@ -5,7 +11,26 @@
     display: flex
     justify-content: space-between
     gap: 24px
+    align-items: top
     
     &__item
         display: flex
         flex-direction: column
+        gap: 8px
+
+    &__filterbox
+        border-radius: 4px
+        background: none
+
+    span
+        color: #FDFDFD
+        font-size: 14px
+
+    &__button
+        background-color: #FDFDFD
+        border-radius: 4px
+        border: none
+        padding: 16px 36px
+        font-size: 16px
+        font-weight: bold
+        color: #1A3E3E

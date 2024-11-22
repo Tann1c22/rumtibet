@@ -10,7 +10,7 @@
   </head>
   <body>
     <section class="main">
-      <section class="section section-start">
+      <section class="section-start">
         <div class="container">
           <div class="promo">
             <header class="header">
@@ -36,7 +36,7 @@
                     <li><a href="">Контакты</a></li>
                   </ul>
                 </nav>
-                <a href="" class="header__consultation">Консультация</a>
+                <a href="" class="btn-primary header__consultation">Консультация</a>
               </div>
               <button class="header__burger">
                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -52,12 +52,14 @@
               <form class="search">
                 <div class="search__item">
                   <select name="" id="">
-                    <option>Локация для тура</option>
+                    <option class="search__filterbox">Локация для тура</option>
                   </select>
                   <span>выберите из списка</span>
                 </div>
                 <div class="search__item">
-                  <input type="date" />
+                  <select name="" id="">
+                    <option class="search__filterbox">Дата похода</option>
+                  </select>
                   <span>укажите диапазон</span>
                 </div>
                 <div class="search__item">
@@ -67,10 +69,41 @@
                   <span>минимум 4 человека</span>
                 </div>
 
-                <div class="search__item">
-                  <button type="submit">Найти программу</button>
-                </div>
+
+                <button class="search__button" type="submit">Найти программу</button>
+
               </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section about">
+        <div class="container">
+          <div class="about__wrapper">
+            <div class="about__images">
+              <div class="about__pic">
+                <img class="about__image" src="/assets/images/photo_card1.jpg" alt="">
+              </div>
+              <div class="about__video">
+                <button class="about__button">
+                  <img src="/assets/icons/play_video_icon.svg" alt="">
+                </button>
+                <img class="about__image" src="/assets/images/photo_card2.jpg" alt="">
+              </div>
+            </div>
+            <div class="about__info">
+              <div class="note">
+                о нашем походе
+              </div>
+              <div class="title">
+                Исследуйте все горные массивы мира вместе с нами
+              </div>
+              <p>
+                Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur"и занялся его поисками в классической латинской литературе.
+              </p>
+              <a href="#" class="btn-primary">
+                Программа тура
+              </a>
             </div>
           </div>
         </div>

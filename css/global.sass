@@ -1,10 +1,11 @@
-@import "fonts.sass"
-@import "_media.sass"
-@import "_variables.sass"
-@import "_mixins.sass"
-@import "./promo.sass"
-@import "./header.sass"
-@import "./search.sass"
+@use "_media.sass"
+@use "_variables.sass"
+@use "_mixins.sass"
+@use "./promo.sass"
+@use "./header.sass"
+@use "./search.sass"
+@use "./about.sass"
+@use "./fonts.sass"
 
 *
     box-sizing: border-box
@@ -20,9 +21,7 @@ body
     //font-family: "SF Pro Display"
     //color: $font-color-default
     background-color: #F3F5F4
-
-.section-start
-    background: darkgrey
+    font-family: "Nunito Sans", sans-serif
 
 a
     text-decoration: none
@@ -43,3 +42,36 @@ ul
     background-image: url(assets/images/mainscreen.jpg)
     background-repeat: no-repeat
     height: 985px
+
+.btn-primary
+        display: inline-block
+        padding: 16px 36px
+        font-size: 16px
+        line-height: 20px
+        font-weight: 600
+        background-color: #1A3E3E
+        color: #FDFDFD
+        border-radius: 4px
+
+.section
+    padding: 80px 0 100px
+
+.note
+    color: #F2BE22
+    font-size: 24px
+    line-height: 1
+
+.title 
+    font-weight: 800
+    font-size: 32px
+    line-height: 1.2
+    margin: 8px 0 40px 0
+
+p
+    font-size: 18px
+    line-height: 1.5
+    margin-bottom: 40px
+
+button
+    font-family: "Nunito Sans", sans-serif
+
