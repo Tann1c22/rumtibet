@@ -1,0 +1,73 @@
+.blog
+    text-align: center
+
+    &__title
+        font-size: 24px
+        font-weight: 700
+        line-height: 32px
+
+    &__column
+        display: grid
+        gap: 20px
+
+    &__paragraph
+        font-size: 14px
+        line-height: 20px
+        max-height: 116px
+        overflow: hidden
+        display: -webkit-box
+        -webkit-line-clamp: 5
+        -webkit-box-orient: vertical
+
+    &__note
+        color: #F2BE22
+        font-size: 14px
+        font-weight: 700
+        line-height: 20px
+
+    &__read
+        font-size: 14px
+        font-weight: 700
+        line-height: 20px
+
+    &__articles
+        display: flex
+        justify-content: space-around
+        gap: 20px
+        padding-bottom: 50px
+
+    &__item
+        gap: 16px
+        padding: 16px
+        background-color: #FDFDFD
+        border-radius: 10px
+        text-align: left
+        display: flex
+        max-width: 580px
+        max-height: 312px
+        align-items: center
+
+        &:hover
+            cursor: pointer
+            box-shadow: 0px 0px 15px 0px rgba(24, 18, 30, 0.12)
+            transition: 0.15s
+            .blog__title
+                text-decoration: underline
+                color: #1A3E3E
+
+        &__footer
+            display: flex
+            justify-content: space-between
+            margin-top: auto
+
+    &__image
+        width: 230px
+        height: 280px
+
+    &__text
+        padding: 16px 0px 16px 0px
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        flex-grow: 1

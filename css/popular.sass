@@ -39,6 +39,7 @@
         
 
 .overlay
+    display: flex
     position: absolute
     top: 80%
     left: 0
@@ -47,10 +48,8 @@
     background-color: rgba(255, 255, 255, 0.2)
     backdrop-filter: blur(6px)
     color: #FDFDFD
-    display: flex
     flex-direction: column
     justify-content: space-between
-    align-items: flex-start
     text-align: left
     transition: 1.2s
     
@@ -83,8 +82,9 @@
 
     &__header
         display: flex
-        margin-bottom: 40px
+        max-width: 320px
         justify-content: space-between
+        margin-bottom: 40px
         gap: 35px
         
     &__button
