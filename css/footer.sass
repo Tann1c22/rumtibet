@@ -1,20 +1,30 @@
 .footer
+    position: relative
 
+    p
+        font-size: 14px
+        font-weight: 300
 
     &__contact
         text-decoration: underline
 
 
-
-
+    &__item
+        min-width: 25%
+        
+    &__title
+        font-size: 20px
+        font-weight: 600
 
     &__top
         background-color: #1A3E3E
         color: #FFFFFF
 
         &-wrapper
+            padding: 178px 0 80px
             display: flex
-            justify-content: space-around
+            justify-content: space-between
+            gap: 70px
 
     &__bottom
         background-color: #18121E
@@ -27,3 +37,44 @@
             padding: 24px 0
             display: flex
             justify-content: space-between
+
+    &__contacts
+        padding: 62px 0 32px
+        
+    &__contact
+        padding: 0 24px 0 0
+
+    &__social-item
+        padding: 0 16px 0 0
+
+    &__list
+        display: flex
+        flex-direction: column
+        gap: 16px
+        
+        &-item
+            font-size: 14px
+            font-weight: 300
+            line-height: 18px
+            display: inline-flex
+            gap: 8px
+            align-items: baseline
+
+            a
+                transition: 0.2s
+                
+            svg
+                transition: 0.2s
+
+
+            &:hover
+            
+                a
+                    color: #F2BE22
+                    text-decoration: underline
+            
+                svg path
+                    fill: #F2BE22
+    
+        
+                
