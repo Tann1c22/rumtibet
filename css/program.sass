@@ -1,5 +1,6 @@
 .program
     padding-top: 80px
+    display: flex
 
     &__wrapper
         display: flex
@@ -29,3 +30,19 @@
     &__imageflower
         padding: 40px 0
         gap: 90px
+
+@media screen and (max-width: 1120px)
+    .program .note
+        text-align: center
+    .program .title
+        text-align: center
+    .program__imageflower
+        display: none
+    .program__wrapper
+        flex-direction: column
+        align-items: center
+    
+    .program__info
+        display: flex
+        flex-direction: column
+        align-items: center

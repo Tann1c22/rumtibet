@@ -2,6 +2,8 @@
     padding-top: 100px
     background-color: #FFFFFF
 
+    &__tourbutton
+        padding: 12px 24px
     &__wrapper
         display: flex
         justify-content: space-between
@@ -38,4 +40,21 @@
         &:hover
             cursor: pointer
 
+@media screen and (max-width: 1120px)
+    .about__wrapper
+        flex-direction: column
+        align-items: center
+        .about__images
+            max-width: 350px
+            order: 1
+        .about__info
+            display: flex
+            flex-direction: column
+            order: 0
+    .about__pic
+        display: none
+    .about__video
+        margin: 40px 0 0 0
+    .about .btn-primary
+        align-self: center
     
