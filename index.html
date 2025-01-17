@@ -2,6 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="datepicker.material.css">
+    <script src="./js/datepicker.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -87,23 +89,27 @@
               </div>
               <form class="search">
                 <div class="search__item">
-                  <select name="" id="jsSelectLocation">
-                    <option class="search__filterbox" >Локация для тура</option>
-                    <option class="search__filterbox" >Тибет 1</option>
-                    <option class="search__filterbox" >Тибет 2</option>
-                    <option class="search__filterbox" >Тибет 3</option>
-                    <option class="search__filterbox" >Тибет 4</option>
-                  </select>
+                  <div class="search__box">
+                    <select name="" id="jsSelectLocation">
+                      <option class="search__filterbox" >Локация для тура</option>
+                      <img src="./public/assets/icons/arrow_pointing_down.svg" alt="">
+                      <option class="search__filterbox" >Тибет 1</option>
+                      <option class="search__filterbox" >Тибет 2</option>
+                      <option class="search__filterbox" >Тибет 3</option>
+                      <option class="search__filterbox" >Тибет 4</option>
+                    </select>
+                  </div>
                   <span>выберите из списка</span>
                 </div>
                 <div class="search__item">
-                  <select name="" id="">
+                  <!-- <select name="" id="jsDataPicker">
                     <option class="search__filterbox">Дата похода</option>
-                  </select>
+                  </select> -->
+                  <input type="text" placeholder="Дата похода" class="search__filterbox" id="jsDataPicker">
                   <span>укажите диапазон</span>
                 </div>
                 <div class="search__item">
-                  <select name="" id="">
+                  <select name="" id="jsSelectLocation">
                     <option>Участники</option>
                   </select>
                   <span>минимум 4 человека</span>

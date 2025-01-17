@@ -18,3 +18,4 @@ form.addEventListener("submit", formSubmit);
 const element = document.querySelector('#jsSelectLocation');
 const choices = new Choices(element, {});
 console.log(choices)
+const datepicker = new Datepicker('#jsDataPicker');
