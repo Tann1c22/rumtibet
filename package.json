@@ -3,7 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Tann1c22.github.io/rumtibet",
+  "homepage": "https://tann1c22.github.io/rumtibet/",
+  
   "scripts": {
     "dev": "vite",
     "build": "vite build",
