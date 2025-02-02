@@ -1,9 +1,9 @@
 {
   "name": "rumtibet",
   "private": true,
+  "homepage": "https://Tann1c22.github.io/rumtibet",
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://tann1c22.github.io/rumtibet/",
   
   "scripts": {
     "dev": "vite",
@@ -11,11 +11,13 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "sass": "^1.77.6",
     "vite": "^5.2.0",
     "vite-plugin-sass": "^0.1.0"
   },
   "dependencies": {
-    "choices.js": "^11.0.3"
+    "choices.js": "^11.0.3",
+    "swiper": "^11.2.1"
   }
 }

@@ -48,8 +48,9 @@ ul
     padding: 0
 
 .section-start
-    background-image: url(assets/images/mainscreen.jpg)
+    background-image: url(/assets/images/mainscreen.jpg)
     background-repeat: no-repeat
+    background-size: cover
     height: 985px
 
 .btn-primary
@@ -85,4 +86,45 @@ p
 
 button
     font-family: "Nunito Sans", sans-serif
+
+.choices 
+    margin-bottom: 0 
+    color: #FDFDFD
+    text-decoration: none
+
+    &__inner
+        background-color: transparent
+        border-radius: 8px
+        border: 1px #E1E3E4 solid
+        font-size: 16px
+        font-weight: 600
+        line-height: 1.5
+    &__item
+        &::after
+            display: none
+
+.choices[data-type*=select-one]::after
+    width: 8px
+    height: 8px
+    border-top: 2px solid #FDFDFD
+    border-right: 2px solid #FDFDFD
+    border-bottom: none
+    border-left: none
+    margin: 0
+    transform: rotate(135deg)
+    display: inline-block
+    transition: 0.4s
+    content: ""
+    position: absolute
+    right: 18.5px
+    top: 38%
+    
+    
+.choices[data-type*=select-one].is-open::after
+    margin-top: 0
+    border-color: #FDFDFD #FDFDFD transparent transparent
+    transform: rotate(-45deg)
+
+.swiper-slide
+    flex-shrink: 1 !important
 
