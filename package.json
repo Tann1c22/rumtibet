@@ -18,6 +18,7 @@
     "vite-plugin-sass": "^0.1.0"
   },
   "dependencies": {
-    "choices.js": "^11.0.3"
+    "choices.js": "^11.0.3",
+    "swiper": "^11.2.1"
   }
 }

@@ -12,6 +12,8 @@
       rel="stylesheet"
     />
     <title>РумТибет</title>
+    <script type="module" crossorigin src="/assets/index-CKjXf-UP.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CmKgrzRg.css">
   </head>
   <body>
     <main class="main">
@@ -91,26 +93,21 @@
                 <div class="search__item">
                   <div class="search__box">
                     <select name="" id="jsSelectLocation">
-                      <option class="search__filterbox">
-                        Локация для тура
-                      </option>
-                      <img src="assets/icons/arrow_pointing_down.svg" alt="" />
-                      <option class="search__filterbox">Тибет 1</option>
-                      <option class="search__filterbox">Тибет 2</option>
-                      <option class="search__filterbox">Тибет 3</option>
-                      <option class="search__filterbox">Тибет 4</option>
+                      <option class="search__filterbox" >Локация для тура</option>
+                      <img src="assets/icons/arrow_pointing_down.svg" alt="">
+                      <option class="search__filterbox" >Тибет 1</option>
+                      <option class="search__filterbox" >Тибет 2</option>
+                      <option class="search__filterbox" >Тибет 3</option>
+                      <option class="search__filterbox" >Тибет 4</option>
                     </select>
                   </div>
                   <span>выберите из списка</span>
                 </div>
                 <div class="search__item">
-                  
-                  <input
-                    type="text"
-                    placeholder="Дата похода"
-                    class="search__filterbox"
-                    id="jsDataPicker"
-                  />
+                  <!-- <select name="" id="jsDataPicker">
+                    <option class="search__filterbox">Дата похода</option>
+                  </select> -->
+                  <input type="text" placeholder="Дата похода" class="search__filterbox" id="jsDataPicker">
                   <span>укажите диапазон</span>
                 </div>
                 <div class="search__item">
@@ -162,9 +159,7 @@
                 взял одно из самых странных слов в Lorem Ipsum, "consectetur"и
                 занялся его поисками в классической латинской литературе.
               </p>
-              <a href="#" class="btn-primary about__tourbutton">
-                Программа тура
-              </a>
+              <a href="#" class="btn-primary about__tourbutton"> Программа тура </a>
             </div>
           </div>
         </div>
@@ -237,93 +232,90 @@
           <div class="popular__wrapper">
             <div class="note">по версии отдыхающих</div>
             <div class="title">Популярные направления</div>
-            <div class="swiper" id="popularCardsSwiper">
-              <div class="popular__cards swiper-wrapper">
-                <div class="popular__item swiper-slide">
-                  <img src="assets/images/shopcard_1.jpg" />
-                  <div class="popular__stars">
-                    <img src="assets/icons/rating_star_icon.svg" />
-                    <span>4.9</span>
+            <div class="popular__cards">
+              <div class="popular__item">
+                <img src="assets/images/shopcard_1.jpg" />
+                <div class="popular__stars">
+                  <img src="assets/icons/rating_star_icon.svg" />
+                  <span>4.9</span>
+                </div>
+                <div class="popular__overlay overlay">
+                  <div class="overlay__header">
+                    <div class="overlay__title">
+                      <p class="overlay__name">Озеро возле гор</p>
+                      <p class="overlay__desc">романтическое приключение</p>
+                    </div>
+                    <div class="overlay__price">480$</div>
                   </div>
-                  <div class="popular__overlay overlay">
-                    <div class="overlay__header">
-                      <div class="overlay__title">
-                        <p class="overlay__name">Озеро возле гор</p>
-                        <p class="overlay__desc">романтическое приключение</p>
-                      </div>
-                      <div class="overlay__price">480$</div>
-                    </div>
-                    <div class="overlay__info">
-                      Его корни уходят в один фрагмент классической латыни 45
-                      года н.э., то есть более двух тысячелетий назад. Ричард
-                      МакКлинток, профессор латыни из колледжа Hampden-Sydney,
-                      штат Вирджиния, взял одно из самых странных слов в Lorem
-                      Ipsum, "consectetur"и занялся его поисками в классической
-                      латинской литературе.
-                    </div>
-                    <div class="overlay__button">
-                      <a href="#" class="btn-primary"> Программа тура </a>
-                    </div>
+                  <div class="overlay__info">
+                    Его корни уходят в один фрагмент классической латыни 45 года
+                    н.э., то есть более двух тысячелетий назад. Ричард
+                    МакКлинток, профессор латыни из колледжа Hampden-Sydney,
+                    штат Вирджиния, взял одно из самых странных слов в Lorem
+                    Ipsum, "consectetur"и занялся его поисками в классической
+                    латинской литературе.
+                  </div>
+                  <div class="overlay__button">
+                    <a href="#" class="btn-primary"> Программа тура </a>
                   </div>
                 </div>
-                <div class="popular__item swiper-slide">
-                  <img src="assets/images/shopcard_2.jpg" />
-                  <div class="popular__stars">
-                    <img src="assets/icons/rating_star_icon.svg" />
-                    <span>4.5</span>
+              </div>
+              <div class="popular__item">
+                <img src="assets/images/shopcard_2.jpg" />
+                <div class="popular__stars">
+                  <img src="assets/icons/rating_star_icon.svg" />
+                  <span>4.5</span>
+                </div>
+                <div class="popular__overlay overlay">
+                  <div class="overlay__header">
+                    <div class="overlay__title">
+                      <p class="overlay__name">Ночь в горах</p>
+                      <p class="overlay__desc">в компании друзей</p>
+                    </div>
+                    <div class="overlay__price">500$</div>
                   </div>
-                  <div class="popular__overlay overlay">
-                    <div class="overlay__header">
-                      <div class="overlay__title">
-                        <p class="overlay__name">Ночь в горах</p>
-                        <p class="overlay__desc">в компании друзей</p>
-                      </div>
-                      <div class="overlay__price">500$</div>
-                    </div>
-                    <div class="overlay__info">
-                      Его корни уходят в один фрагмент классической латыни 45
-                      года н.э., то есть более двух тысячелетий назад. Ричард
-                      МакКлинток, профессор латыни из колледжа Hampden-Sydney,
-                      штат Вирджиния, взял одно из самых странных слов в Lorem
-                      Ipsum, "consectetur"и занялся его поисками в классической
-                      латинской литературе.
-                    </div>
-                    <div class="overlay__button">
-                      <a href="#" class="btn-primary"> Программа тура </a>
-                    </div>
+                  <div class="overlay__info">
+                    Его корни уходят в один фрагмент классической латыни 45 года
+                    н.э., то есть более двух тысячелетий назад. Ричард
+                    МакКлинток, профессор латыни из колледжа Hampden-Sydney,
+                    штат Вирджиния, взял одно из самых странных слов в Lorem
+                    Ipsum, "consectetur"и занялся его поисками в классической
+                    латинской литературе.
+                  </div>
+                  <div class="overlay__button">
+                    <a href="#" class="btn-primary"> Программа тура </a>
                   </div>
                 </div>
-                <div class="popular__item swiper-slide">
-                  <img src="assets/images/shopcard_3.jpg" />
-                  <div class="popular__stars">
-                    <img src="assets/icons/rating_star_icon.svg" />
-                    <span>5.0</span>
+              </div>
+              <div class="popular__item">
+                <img src="assets/images/shopcard_3.jpg" />
+                <div class="popular__stars">
+                  <img src="assets/icons/rating_star_icon.svg" />
+                  <span>5.0</span>
+                </div>
+                <div class="popular__overlay overlay">
+                  <div class="overlay__header">
+                    <div class="overlay__title">
+                      <p class="overlay__name">Озеро возле гор</p>
+                      <p class="overlay__desc">романтическое приключение</p>
+                    </div>
+                    <div class="overlay__price">230$</div>
                   </div>
-                  <div class="popular__overlay overlay">
-                    <div class="overlay__header">
-                      <div class="overlay__title">
-                        <p class="overlay__name">Озеро возле гор</p>
-                        <p class="overlay__desc">романтическое приключение</p>
-                      </div>
-                      <div class="overlay__price">230$</div>
-                    </div>
-                    <div class="overlay__info">
-                      Его корни уходят в один фрагмент классической латыни 45
-                      года н.э., то есть более двух тысячелетий назад. Ричард
-                      МакКлинток, профессор латыни из колледжа Hampden-Sydney,
-                      штат Вирджиния, взял одно из самых странных слов в Lorem
-                      Ipsum, "consectetur"и занялся его поисками в классической
-                      латинской литературе.
-                    </div>
-                    <div class="overlay__button">
-                      <a href="#" class="btn-primary"> Программа тура </a>
-                    </div>
+                  <div class="overlay__info">
+                    Его корни уходят в один фрагмент классической латыни 45 года
+                    н.э., то есть более двух тысячелетий назад. Ричард
+                    МакКлинток, профессор латыни из колледжа Hampden-Sydney,
+                    штат Вирджиния, взял одно из самых странных слов в Lorem
+                    Ipsum, "consectetur"и занялся его поисками в классической
+                    латинской литературе.
+                  </div>
+                  <div class="overlay__button">
+                    <a href="#" class="btn-primary"> Программа тура </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
           <a href="#" class="btn-primary"> Рейтинг направлений </a>
         </div>
       </section>
@@ -428,30 +420,27 @@
           <div class="gallery__wrapper">
             <div class="note">фото-отчет</div>
             <div class="title">Делимся впечатлениями</div>
-            <div class="swiper" id="galleryImagesSwiper">
-              <div class="gallery__images swiper-wrapper">
-                <div class="gallery__item swiper-slide">
-                  <img src="assets/images/gallery_image_1.jpg" alt="" class="gallery__image"/>
-                </div>
-                <div class="gallery__item swiper-slide">
-                  <img src="assets/images/gallery_image_2.jpg" alt="" class="gallery__image"/>
-                </div>
-                <div class="gallery__item swiper-slide">
-                  <img src="assets/images/gallery_image_3.jpg" alt="" class="gallery__image"/>
-                </div>
-                <div class="gallery__item swiper-slide">
-                  <img src="assets/images/gallery_image_4.jpg" alt="" class="gallery__image"/>
-                </div>
-                <div class="gallery__item swiper-slide">
-                  <img src="assets/images/gallery_image_5.jpg" alt="" class="gallery__image"/>
-                </div>
-                <div class="gallery__item swiper-slide">
-                  <img src="assets/images/gallery_image_6.jpg" alt="" class="gallery__image"/>
-                </div>
+            <div class="gallery__images">
+              <div class="gallery__item">
+                <img src="assets/images/gallery_image_1.jpg" alt="" />
+              </div>
+              <div class="gallery__item">
+                <img src="assets/images/gallery_image_2.jpg" alt="" />
+              </div>
+              <div class="gallery__item">
+                <img src="assets/images/gallery_image_3.jpg" alt="" />
+              </div>
+              <div class="gallery__item">
+                <img src="assets/images/gallery_image_4.jpg" alt="" />
+              </div>
+              <div class="gallery__item">
+                <img src="assets/images/gallery_image_5.jpg" alt="" />
+              </div>
+              <div class="gallery__item">
+                <img src="assets/images/gallery_image_6.jpg" alt="" />
               </div>
             </div>
-            
-            <a href="#" class="btn-primary btn-gallery"> Наш pinterest </a>
+            <a href="#" class="btn-primary"> Наш pinterest </a>
           </div>
         </div>
       </section>
@@ -527,94 +516,34 @@
                 <div>
                   <ul class="footer__list">
                     <li class="footer__list-item">
-                      <svg
-                        width="6"
-                        height="10"
-                        viewBox="0 0 6 10"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700889 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z"
-                          fill="#FDFDFD"
-                        />
-                      </svg>
-                      <a href="#">Прогулки в горы летом</a>
+                      <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700889 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z" fill="#FDFDFD"/>
+                        </svg><a href="#">Прогулки в горы летом</a>
                     </li>
                     <li class="footer__list-item">
-                      <svg
-                        width="6"
-                        height="10"
-                        viewBox="0 0 6 10"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700889 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z"
-                          fill="#FDFDFD"
-                        />
-                      </svg>
-                      <a href="#">Зимние походы в горы</a>
+                      <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700889 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z" fill="#FDFDFD"/>
+</svg><a href="#">Зимние походы в горы</a>
                     </li>
                     <li class="footer__list-item">
-                      <svg
-                        width="6"
-                        height="10"
-                        viewBox="0 0 6 10"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700889 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z"
-                          fill="#FDFDFD"
-                        />
-                      </svg>
-                      <a href="#">Посещение храмов в горах</a>
+                      <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700889 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z" fill="#FDFDFD"/>
+</svg><a href="#">Посещение храмов в горах</a>
                     </li>
                     <li class="footer__list-item">
-                      <svg
-                        width="6"
-                        height="10"
-                        viewBox="0 0 6 10"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700889 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z"
-                          fill="#FDFDFD"
-                        />
-                      </svg>
-                      <a href="#">Экстремальные виды туризма</a>
+                      <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700889 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z" fill="#FDFDFD"/>
+</svg><a href="#">Экстремальные виды туризма</a>
                     </li>
                     <li class="footer__list-item">
-                      <svg
-                        width="6"
-                        height="10"
-                        viewBox="0 0 6 10"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700889 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z"
-                          fill="#FDFDFD"
-                        />
-                      </svg>
-                      <a href="#">Походы в джунглях Амазонии</a>
+                      <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700889 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z" fill="#FDFDFD"/>
+</svg><a href="#">Походы в джунглях Амазонии</a>
                     </li>
                     <li class="footer__list-item">
-                      <svg
-                        width="6"
-                        height="10"
-                        viewBox="0 0 6 10"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700889 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z"
-                          fill="#FDFDFD"
-                        />
-                      </svg>
-                      <a href="#">Поездка в Африку</a>
+                      <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700889 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z" fill="#FDFDFD"/>
+</svg><a href="#">Поездка в Африку</a>
                     </li>
                   </ul>
                 </div>
@@ -624,66 +553,26 @@
                 <div>
                   <ul class="footer__list">
                     <li class="footer__list-item">
-                      <svg
-                        width="6"
-                        height="10"
-                        viewBox="0 0 6 10"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700889 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z"
-                          fill="#FDFDFD"
-                        />
-                      </svg>
-                      <a href="#">Как собрать в долгий поход?</a>
+                      <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700889 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z" fill="#FDFDFD"/>
+</svg><a href="#">Как собрать в долгий поход?</a>
                     </li>
                     <li class="footer__list-item">
-                      <svg
-                        width="6"
-                        height="10"
-                        viewBox="0 0 6 10"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700889 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z"
-                          fill="#FDFDFD"
-                        />
-                      </svg>
-                      <a href="#">Жизненно важные предметы для похода</a>
+                      <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700889 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z" fill="#FDFDFD"/>
+</svg><a href="#">Жизненно важные предметы для похода</a>
                     </li>
                     <li class="footer__list-item">
-                      <svg
-                        width="6"
-                        height="10"
-                        viewBox="0 0 6 10"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700889 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z"
-                          fill="#FDFDFD"
-                        />
-                      </svg>
-                      <a href="#"
+                      <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700889 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z" fill="#FDFDFD"/>
+</svg><a href="#"
                         >Медицинская страховка, гарантии безопасности</a
                       >
                     </li>
                     <li class="footer__list-item">
-                      <svg
-                        width="6"
-                        height="10"
-                        viewBox="0 0 6 10"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700889 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z"
-                          fill="#FDFDFD"
-                        />
-                      </svg>
-                      <a href="#">Если вы врач - загляните сюда</a>
+                      <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.7154 4.6098L1.26527 0.159755C1.16235 0.0567475 1.02495 0 0.878448 0C0.731945 0 0.594548 0.0567475 0.491622 0.159755L0.163901 0.487394C-0.0493491 0.700889 -0.0493491 1.04788 0.163901 1.26105L3.90078 4.99793L0.159755 8.73895C0.0568288 8.84196 0 8.97928 0 9.1257C0 9.27228 0.0568288 9.4096 0.159755 9.51269L0.487476 9.84024C0.590483 9.94325 0.727799 10 0.874302 10C1.0208 10 1.1582 9.94325 1.26113 9.84024L5.7154 5.38613C5.81857 5.2828 5.87524 5.14484 5.87491 4.99817C5.87524 4.85094 5.81857 4.71305 5.7154 4.6098Z" fill="#FDFDFD"/>
+</svg><a href="#">Если вы врач - загляните сюда</a>
                     </li>
                   </ul>
                 </div>
@@ -694,9 +583,7 @@
         <div class="footer__bottom">
           <div class="container">
             <div class="footer__bottom-wrapper">
-              <div class="footer__copy footer__bottom-item">
-                ИП Константинопольский К.К., 2023
-              </div>
+              <div class="footer__copy footer__bottom-item">ИП Константинопольский К.К., 2023</div>
               <div class="footer_politics footer__bottom-item">
                 <a href="#">Политика обработки персональных данных</a>
               </div>
@@ -704,7 +591,6 @@
           </div>
         </div>
       </footer>
-    </main>
-    <script type="module" src="script.js"></script>
+    </main>
   </body>
 </html>
